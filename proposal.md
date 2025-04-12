@@ -9,13 +9,13 @@
 ### Repositorios
 * [frontend app](http://hyperlinkToGihubOrGitlab)
 * [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+
 
 ## Tema
-Gestion de clubes de Futbol
+Gestion de clubes
 ### Descripción
-Pagina web destinada a clubes de futbol incorporando la gestion de socios, pagos de cuotas, noticias, entre otras. Esto servira para poder llevar la cantidad de socios dentro del club, poder saber si llevan al dia la cuota y para los socios poder tener informacion, manteniendo transparencia en dicha institucion.
-Las noticias que tengan lugar dentro del club actualizadas momento a momento con notas de jugadores post partidos y logros obtenidos. 
+Pagina web destinada a instituciones deportivas incorporando la gestión de socios, pagos de cuotas, noticias, entre otras. Esto servira para que los socios o fanáticos del club puedan estar al tanto de novedades y tener un lugar donde gestionar su membresía como socios en el caso de serlo. También ayuda a tener datos internos como la cantidad exacta de socios del club, cuántos usuarios son socios y a saber qué opinan los usuarios de las noticias del club mediante una sección de comentarios particular para cada novedad.
+Las noticias que tengan lugar dentro del club actualizadas momento a momento con notas de jugadores post partidos, logros obtenidos, futuros encuentros deportivos, actividades realizadas dentro de la institución o nuevo merchandising del club. 
 
 ### Modelo
 ![imagen del modelo]()
@@ -25,13 +25,13 @@ Las noticias que tengan lugar dentro del club actualizadas momento a momento con
 ## Alcance Funcional 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
+*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de clubes de futbol
 
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Socio <br>2. CRUD Noticias<br>3. CRUD Cuota|
-|CRUD dependiente|1. CRUD Socio {depende de} CRUD CRUD Cuota<br>2. CRUD Cliente {depende de} CRUD Localidad|
+|CRUD simple|1. CRUD Usuario <br>2. CRUD Noticias|
+|CRUD dependiente|1. CRUD Socio {depende de} CRUD Cuota<br>2. CRUD Cliente {depende de} CRUD Localidad|<br>3. CRUD Comentario {depende de} CRUD Usuario|
 |Listado<br>+<br>detalle| 1. Listado de SOCIO filtrado por los que estan al dia y los que no, muestra nro y tipo de socio => detalle CRUD Socio<br> 2. Listado de noticias filtrado por rango de fecha, muestra titulo de la noticia, fecha, foto de la noticia y breve descripcion => detalle muestra un listado de noticias|
 |CUU/Epic|1. Asociarte al club<br>2. Realizar una edicion dentro de las noticias del club|
 
